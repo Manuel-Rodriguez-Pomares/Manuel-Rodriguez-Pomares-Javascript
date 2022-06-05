@@ -8,7 +8,7 @@
 
 body {
 
-   
+    background-color: #2a2a2a;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -63,32 +63,69 @@ li {
 /*MAIN*/
 
 main{   
-    height: auto;
+    height: 1028px;
+    width: 1386px;
 
 }
 
-main .separador{ 
+.container{  
+    height: 1028px;
+    width: 1386px;
+}
+.titulo {
+    height: 76px;
+    width: 1386px;
+}
+.container-espaciado    {
+    height: 952px;
+    width: 1320px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+   
+}
+.titulo{    
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.menu-title {
+    font-size: xx-large;
+    color: white;
+
 }
 
-main .separador .container-card {
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: arial;
+    background-color: ghostwhite;
+  }
+  
+  .price {
+    color: black;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
 
-  display: grid;
-  grid-template-columns: 1.5fr;
-
-}
-
-.card{  
-    background-image:url(/img/DSC04004[284].jpg) ;
-    background-position: center;
-    background-size: cover;
-    
-}
-
-
-
-
+  
 /*FOOTER*/
 
 footer{
